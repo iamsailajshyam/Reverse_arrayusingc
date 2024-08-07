@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, arr[10] = {1, 2, 3, 4, 5}, reversedArr[10];
+    int size = 5; // Initialize the size of the array
+
+    for (i = 0; i < size; i++) {
+        reversedArr[i] = arr[size - i - 1];
+    }
+
+    // Print reversed array
+    printf("Reversed Array: ");
+    for (i = 0; i < size; i++) {
+        printf("%d ", reversedArr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
